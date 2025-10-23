@@ -277,6 +277,115 @@ switch (opcao) //
             break;
         }
 
+    //Início das comparações
+    int comparacao1, comparaçao2;
+    int resultado1, resultado2;
+
+    printf("Escolha o primeiro atributo que gostaria de comparar: \n");
+    printf("1. População\n");
+    printf("2. Área\n");
+    printf("3. PIB\n");
+    printf("4. Número de pontos turísticos\n");
+    printf("5. Densidade populacional\n");
+    printf("6. PIB per capita\n");
+    printf("7. Super Poder\n");    
+    printf("\n");  
+    printf("Digite a sua escolha:\n");
+    scanf("%d", &comparacao1);
+
+    printf("\n");  
+
+    switch(comparacao1)
+    {
+        case 1:
+            printf("- Comparação do atributo População:\n");
+            if (populacao1 > populacao2) {
+                printf("%s possui população de %d pessoas - %s possui populção de %d pessoas!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, populacao_1, nome_cidade_2, populacao_2,nome_cidade_1);
+            } else if (populacao_1 < populacao_2) {
+                printf("%s possui população de %d pessoas - %s possui populção de %d pessoas!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, populacao_2, nome_cidade_1, populacao_1,nome_cidade_2);
+            } else if (populacao_1 == populacao_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 2:
+            printf("- Comparação do atributo Área:\n");
+            if (area_1 > area_2) {
+                printf("%s possui área de %.2f Km² - %s possui área de %.2f Km²!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, area_1, nome_cidade_2, area_2, nome_cidade_1);
+            } else if (area_1 < area_2) {
+                printf("%s possui área de %.2f Km² - %s possui área de %.2f Km²!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, area_2, nome_cidade_1, area_1, nome_cidade_2);
+            } else if (area_1 == area_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 3:
+            printf("- Comparação do atributo PIB:\n");
+            if (pib_1 > pib_2) {
+                printf("%s possui um PIB de R$ %.2f Bilhões de reais - %s possui PIB de R$ %.2f Bilhões de reais!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, pib_1, nome_cidade_2, pib_2, nome_cidade_1);
+            } else if (pib_1 < pib_2) {
+                printf("%s possui um PIB de R$ %.2f Bilhões de reais - %s possui PIB de R$ %.2f Bilhões de reais!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, pib_2, nome_cidade_1, pib_1, nome_cidade_2);
+            } else if (pib_1 == pib_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 4:
+            printf("- Comparação do atributo Número de Pontos Turísticos:\n");
+            if (pontos_turisticos_1 > pontos_turisticos_2) {
+                printf("%s possui %d pontos turísticos - %s possui %d pontos turísticos!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, pontos_turisticos_1, nome_cidade_2, pontos_turisticos_2, nome_cidade_1);
+            } else if (pontos_turisticos_1 < pontos_turisticos_2) {
+                printf("%s possui %d pontos turísticos - %s possui %d pontos turísticos!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, pontos_turisticos_2, nome_cidade_1, pontos_turisticos_2, nome_cidade_2);
+            } else if (pontos_turisticos_1 == pontos_turisticos_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 5:
+            printf("- Comparação do atributo Densidade Populacional:\n");
+            if (densidade_pop_1 > densidade_pop_2) {
+                printf("%s possui densidade populacional de %.2f hab/km² - %s possui densidade populacional de %.2f hab/km²!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, densidade_pop_1, nome_cidade_2, densidade_pop_2, nome_cidade_1);
+            } else if (densidade_pop_1 < densidade_pop_2) {
+                printf("%s possui densidade populacional de %.2f hab/km² - %s possui densidade populacional de %.2f hab/km²!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, densidade_pop_2, nome_cidade_1, densidade_pop_1, nome_cidade_2);
+            } else if (densidade_pop_1 == densidade_pop_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 6:
+            printf("- Comparação do atributo PIB per capita:\n");
+            if (pib_per_capita_1 > pib_per_capita_2) {
+                printf("%s possui PIB per capita de R$ %.2f - %s possui PIB per capita de R$ %.2f!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_1, pib_per_capita_1, nome_cidade_2, pib_per_capita_2, nome_cidade_2);
+            } else if (pib_per_capita_1 < pib_per_capita_2) {
+                printf("%s possui PIB per capita de R$ %.2f - %s possui PIB per capita de R$ %.2f!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_2, pib_per_capita_2, nome_cidade_1, pib_per_capita_1, nome_cidade_1);
+            } else if (pib_per_capita_1 == pib_per_capita_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        case 7:
+            printf("- Comparação do atributo Super Poder:\n");
+            if (super_poder_1 > super_poder_2) {
+                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, SuperPoder_1, nome_cidade_2, SuperPoder_2, nome_cidade_1);
+            } else if (SuperPoder_1 < SuperPoder_2) {
+                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, SuperPoder_2, nome_cidade_1, SuperPoder_1, nome_cidade_2);
+            } else if (super_poder_1 == super_poder_2) {
+                printf("Empate!!!\n");
+            }
+        break;
+
+        default:
+        printf("Opcao invalida!\n");
+        break;
+    }
+
+printf("\n\n");
+
+//Fim das comparações
+
+    return 0;
+
+} 
 
 
 
