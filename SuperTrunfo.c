@@ -187,6 +187,95 @@ switch (opcao) //Pronto
                 printf("Super Poder: %.2f\n", super_poder_4);         
                 printf("\n");
 }
+//-----------------------O Jogo-----------------
+printf("\n");  
+//-----------------------Escolha das cartas e dos atributos-----------------
+switch (opcao) //
+{
+    case 'I':
+    case 'i':  
+        printf("Primeiro escolha a sua carta:\n")
+        printf("A. São Paulo\n");
+        printf("B. Rio de Janeiro\n");
+        printf("C. Curitiba\n");
+        printf("D. Belo Horizonte\n");
+        printf("Escolhasua carta:\n", &escolha_carta)
+
+        switch (escolha_carta)
+        {
+        case 'A':
+        case 'a':
+            printf("Você escolheu São Paulo! Dados da sua carta:\n\n");
+            printf("Carta 1:\n");
+            printf("Estado: %s\n", nome_estado_1);
+            printf("Código: %s\n", codigo_carta_1);
+            printf("Cidade: %s\n", nome_cidade_1);
+            printf("População: %d\n", populacao_1);
+            printf("Área: %.2f Km²\n", area_1);
+            printf("PIB: R$ %.2f Bilhões de Reais\n", pib_1);
+            printf("Pontos Turísticos: %d\n", pontos_turisticos_1);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop_1);
+            printf("PIB per capita: R$ %.2f\n", pib_per_capita_1);
+            printf("Super Poder: %.2f\n", super_poder_1);         
+            printf("\n");
+    
+        break;
+        
+        case 'B':
+        case 'b':
+            printf("Você escolheu Rio de Janeiro! Dados da sua carta:\n\n");
+            printf("Carta 2:\n");
+            printf("Estado: %s\n", nome_estado_2);
+            printf("Código: %s\n", codigo_carta_2);
+            printf("Cidade: %s\n", nome_cidade_2);
+            printf("População: %d\n", populacao_2);
+            printf("Área: %.2f Km²\n", area_2);
+            printf("PIB: R$ %.2f Bilhões de Reais\n", pib_2);
+            printf("Pontos Turísticos: %d\n", pontos_turisticos_2);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop_2);
+            printf("PIB per capita: R$ %.2f\n", pib_per_capita_2);
+            printf("Super Poder: %.2f\n", super_poder_2);         
+            printf("\n");
+        break;
+
+        case 'C':
+        case 'c':
+            printf("Você escolheu Rio de Janeiro! Dados da sua carta:\n\n");
+            printf("Carta 3:\n");
+            printf("Estado: %s\n", nome_estado_3);
+            printf("Código: %s\n", codigo_carta_3);
+            printf("Cidade: %s\n", nome_cidade_3);
+            printf("População: %d\n", populacao_3);
+            printf("Área: %.2f Km²\n", area_3);
+            printf("PIB: R$ %.2f Bilhões de Reais\n", pib_3);
+            printf("Pontos Turísticos: %d\n", pontos_turisticos_3);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop_3);
+            printf("PIB per capita: R$ %.2f\n", pib_per_capita_3);
+            printf("Super Poder: %.2f\n", super_poder_3);         
+            printf("\n");
+        break;        
+
+        case 'D':
+        case 'd':
+            printf("Você escolheu Rio de Janeiro! Dados da sua carta:\n\n");
+            printf("Carta 4:\n");
+            printf("Estado: %s\n", nome_estado_4);
+            printf("Código: %s\n", codigo_carta_4);
+            printf("Cidade: %s\n", nome_cidade_4);
+            printf("População: %d\n", populacao_4);
+            printf("Área: %.2f Km²\n", area_4);
+            printf("PIB: R$ %.2f Bilhões de Reais\n", pib_4);
+            printf("Pontos Turísticos: %d\n", pontos_turisticos_4);
+            printf("Densidade Populacional: %.2f hab/km²\n", densidade_pop_4);
+            printf("PIB per capita: R$ %.2f\n", pib_per_capita_4);
+            printf("Super Poder: %.2f\n", super_poder_4);         
+            printf("\n");
+        break;
+
+        default:
+            printf("Escolha inválida! Por favor,escolha uma das opções abaixo.")
+            break;
+        }
 
 
 
