@@ -53,7 +53,7 @@ int main () {
         int pontos_turisticos_3 = 15;
         float area_3 = 434.0;
         float pib_3 = 125.0;
-        char codigo_carta_ = "C01";
+        char codigo_carta_3 = "C01";
         char nome_cidade_3 = "Curitiba";
         // Variáveis calculadas
         float densidade_pop_3 = populacao_3 / area_3;
@@ -73,7 +73,7 @@ int main () {
         int pontos_turisticos_4 = 14;
         float area_4 = 331.0;
         float pib_4 = 120.0;
-        char codigo_carta_ = "D01";
+        char codigo_carta_4 = "D01";
         char nome_cidade_4 = "Belo Horizonte";
         // Variáveis calculadas
         float densidade_pop_4 = populacao_4 / area_4;
@@ -194,12 +194,12 @@ switch (opcao) //
 {
     case 'I':
     case 'i':  
-        printf("Primeiro escolha a sua carta:\n")
+        printf("Primeiro escolha a sua carta:\n");
         printf("A. São Paulo\n");
         printf("B. Rio de Janeiro\n");
         printf("C. Curitiba\n");
         printf("D. Belo Horizonte\n");
-        printf("Escolhasua carta:\n", &escolha_carta)
+        printf("Escolhasua carta:\n", &escolha_carta);
 
         switch (escolha_carta)
         {
@@ -273,7 +273,7 @@ switch (opcao) //
         break;
 
         default:
-            printf("Escolha inválida! Por favor,escolha uma das opções abaixo.")
+            printf("Escolha inválida! Por favor,escolha uma das opções abaixo.");
             break;
         }
 
@@ -299,7 +299,7 @@ switch (opcao) //
     {
         case 1:
             printf("- Comparação do atributo População:\n");
-            if (populacao1 > populacao2) {
+            if (populacao_1 > populacao_2) {
                 printf("%s possui população de %d pessoas - %s possui populção de %d pessoas!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, populacao_1, nome_cidade_2, populacao_2,nome_cidade_1);
             } else if (populacao_1 < populacao_2) {
                 printf("%s possui população de %d pessoas - %s possui populção de %d pessoas!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, populacao_2, nome_cidade_1, populacao_1,nome_cidade_2);
@@ -366,9 +366,9 @@ switch (opcao) //
         case 7:
             printf("- Comparação do atributo Super Poder:\n");
             if (super_poder_1 > super_poder_2) {
-                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, SuperPoder_1, nome_cidade_2, SuperPoder_2, nome_cidade_1);
-            } else if (SuperPoder_1 < SuperPoder_2) {
-                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, SuperPoder_2, nome_cidade_1, SuperPoder_1, nome_cidade_2);
+                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 1 (%s) venceu!", nome_cidade_1, super_poder_1, nome_cidade_2, super_poder_2, nome_cidade_1);
+            } else if (super_poder_1 < super_poder_2) {
+                printf("O Super Poder de %s é equivalente à %.2f - O Super Poder de %s é equivalente à %.2f!\nPor isso, a carta 2 (%s) venceu!", nome_cidade_2, super_poder_2, nome_cidade_1, super_poder_1, nome_cidade_2);
             } else if (super_poder_1 == super_poder_2) {
                 printf("Empate!!!\n");
             }
